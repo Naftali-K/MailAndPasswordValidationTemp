@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="Validations"/>
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dafault_input"
+        android:padding="5dp"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dafault_input"
+        android:padding="5dp"
+        android:hint="Password"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Password must be:"/>
+
+    <CheckBox
+        android:id="@+id/num_char_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atleast 8 characters."/>
+
+    <CheckBox
+        android:id="@+id/num_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minimum one number."/>
+
+    <CheckBox
+        android:id="@+id/upper_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minimum one Uppercase."/>
+
+    <CheckBox
+        android:id="@+id/symbols_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minimum one special symbols."/>
+
+</LinearLayout>
